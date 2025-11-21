@@ -207,20 +207,25 @@ footer {
    スマートフォン向け (画面幅 480px 以下)
    ---------------------------------- */
 @media (max-width: 480px) {
-    /* ページ全体の幅を最大にする */
-    #slideshow-container,
-    #content-area {
-        width: 95%;
-    }
-    
-    /* 紹介ブロックを1列にする */
-    .info-block {
-        flex: 1 1 100%; /* 幅を画面いっぱいにして1列に1つ表示 */
-        margin-bottom: 25px;
+    nav {
+        width: 100%;
+        padding: 0;
+        box-sizing: border-box;
     }
 
-    /* スライドショーの画像を小さくする */
-    .slide img {
-        height: 250px;
+    nav a {
+        display: block;
+        width: 100%;
+        font-size: 14px;
+        padding: 8px 10px;
+        margin: 0;
+        border-bottom: 1px solid #005aab;
+        white-space: normal;
+        word-break: break-word;
+        box-sizing: border-box;
+    }
+
+    nav a:last-child {
+        border-bottom: none;
     }
 }
