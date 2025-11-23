@@ -224,6 +224,12 @@ footer {
         word-break: break-word;
         box-sizing: border-box;
     }
+
+    nav a:last-child {
+        border-bottom: none;
+    }
+}
+
 /* ==================================
    雪のエフェクト (Snow Effect)
    ================================== */
@@ -256,9 +262,5 @@ footer {
     }
     100% {
         transform: translateY(100vh); /* 画面外の下まで移動 */
-    }
-}
-    nav a:last-child {
-        border-bottom: none;
     }
 }
